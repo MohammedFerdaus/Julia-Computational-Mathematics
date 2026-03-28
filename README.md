@@ -1,6 +1,6 @@
 # Julia Scientific Computing
 
-A collection of self-directed scientific computing projects built during a gap year to develop applied Julia skills across numerical methods, simulation, linear algebra, and differential equations. Each subfolder is a standalone project covering a different area of computational mathematics and scientific programming.
+A collection of computational mathemamatics projects built during develop applied Julia skills across numerical methods, simulation, linear algebra, and differential equations. Each subfolder is a standalone project covering a different area of computational mathematics and scientific programming.
 
 ---
 
