@@ -119,4 +119,4 @@ julia project5_pde/main.jl
 
 ## Notes
 
-All projects were written and tested in Julia 1.12.5 on Windows 10 with VS Code and the Julia extension. Written entirely from scratch with no starter code — each project was built incrementally, function by function, with full understanding of the underlying mathematics before implementation. This repository represents a scientific computing foundation series built during a gap year before starting a BSc in Mathematics at WLU, with a long-term focus on computational materials discovery using SciML and physics-informed neural networks.
+All projects were written and tested in Julia 1.12.5 on Windows 10 with VS Code and the Julia extension. Written entirely from scratch with no starter code — each project was built incrementally, function by function, with full understanding of the underlying mathematics before implementation. This repository represents a scientific computing foundation series built with a long-term focus on computational materials discovery using SciML and physics-informed neural networks.
