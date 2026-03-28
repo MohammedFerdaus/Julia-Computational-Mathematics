@@ -1,6 +1,6 @@
-# Julia Scientific Computing
+# Julia Computational Mathematics
 
-A collection of computational mathemamatics projects built during develop applied Julia skills across numerical methods, simulation, linear algebra, and differential equations. Each subfolder is a standalone project covering a different area of computational mathematics and scientific programming.
+A collection of computational mathematics projects built during develop applied Julia skills across numerical methods, simulation, linear algebra, and differential equations. Each subfolder is a standalone project covering a different area of computational mathematics and scientific programming.
 
 ---
 
