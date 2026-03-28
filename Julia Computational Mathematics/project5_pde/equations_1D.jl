@@ -17,7 +17,6 @@ function solve_heat_1D(nx::Int, α::Float64, dt::Float64, num_steps::Int)
     save_every = max(1, div(num_steps, 5))
     for step in 1:num_steps
         u_new = copy(u)
-
         for i in 2:(nx-1)
             u_new[i] = u[i] + r * (u[i+1] - 2u[i] + u[i-1])
         end
@@ -44,7 +43,6 @@ function plot_heat_1D(x, snapshots, times, filename="C:\\julia_projects\\project
     savefig(plt, filename)
     println("Saved to $filename")
 end
-
 
 # 1D Wave Equation
 # ∂²u/∂t² = c² * (∂²u/∂x²)
@@ -80,8 +78,17 @@ function solve_wave_1D(nx::Int, c::Float64, dt::Float64, num_steps::Int)
     return x, snapshots, times
 end
 
-function plot_wave_1D(x, snapshots, time, filename="C:\\julia_projects\\project5_pde\\plots\\wave_1d.png")
-
+function plot_wave_1D(x, snapshots, times, filename="C:\\julia_projects\\project5_pde\\plots\\wave_1d.png")
+    plt = plot()
+    for i in 1:length(snapshots)
+        plot!(plt, x, snapshots[i],
+            label="t = $(round(times[i], digits=3))")
+    end
+    title!(plt, "1D Wave Equation")
+    xlabel!(plt, "Position (x)")
+    ylabel!(plt, "Displacement u(x)")
+    savefig(plt, filename)
+    println("Saved to $filename")
 end
 
 # 1D Laplace Equation
@@ -105,12 +112,10 @@ function plot_laplace_1D(x, u, filename="C:\\julia_projects\\project5_pde\\plots
         linewidth=2,
         label="Solution",
         color=:blue)
-
     scatter!([x[1], x[end]], [u[1], u[end]],
         color=:red,
         markersize=8,
         label="Boundary points")
-
     savefig(filename)
     println("Saved to $filename")
 end
